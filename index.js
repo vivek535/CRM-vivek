@@ -14,7 +14,7 @@ app.use(express.json());
 app.use(express.static(path.join(__dirname, 'public')));
 
 // Connect to MongoDB
-const dbURI = process.env.MONGODB_URI || "mongodb+srv://vivek1si19cs137:Atlast#2323@cluster0.21t5l.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+const dbURI = process.env.MONGODB_URI || "mongodb+srv://vivek1si19cs137:Atlast%232323@cluster0.21t5l.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
 mongoose.connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true })
     .then(() => console.log("MongoDB connected"))
     .catch(err => console.log(err));
